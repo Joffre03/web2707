@@ -1,0 +1,10 @@
+p{ 
+    border: solid 4px chocolate; /*borde solo para los parrafos*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px; /*el padding es para hacer un espacio tanto arriba, abajo, ziquierda y derecha de la misma longitud, separamos el texto de un margen invicible */
+    margin: 75px; /*delimita lo que hay de contenido con las etiquetas anteriores en este caso separa el contenido del titulo*/
+
+}
+body{
+    background-image:  url donde esta guaraddo;
+}
