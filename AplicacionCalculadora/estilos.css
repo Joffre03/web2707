@@ -1,0 +1,28 @@
+body{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(239,245,251,1) 100%);
+}
+.container{
+    max-width: 400px;
+    margin: 50px auto; /* centrar*/
+    padding: 20px; /*subir o bajar*/
+    border: 1px solid beige; /*marco*/
+    border-radius:  5px; /*redondear marco*/
+}
+
+input, select, button{
+    display: block; 
+    margin-bottom:  10px; /*separacion entre recuadros*/
+    width: 100%; /*largo de recuadros*/
+    padding: 5px; /*mover arriba p abajo*/
+}
+button{
+    background-color: rgba(238,174,202,1); /*color del boton*/
+    color: whitesmoke; /*color de letras del boton*/
+    border: 1px solid gray; /*borde del boton*/
+    cursor: pointer;/*aparece la manita para darle click*/
+}
+
+button:hover{
+    background-color: whitesmoke; /*al dar poner el puntero sobre cambia de color*/
+}
