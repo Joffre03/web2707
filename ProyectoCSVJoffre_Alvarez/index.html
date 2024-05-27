@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicación CSV</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <section id="read" class="section">
+        <h2>Leer CSV</h2>
+        <input type="file" id="csvFileInput" accept=".csv" />
+       <button onclick="readCSV()">Leer Archivo </button> 
+        <pre id="csvContent"></pre>
+    </section>
+
+    <section id="insert" class="section" style="display: none;">
+        <h2>Insertar Datos en CSV</h2>
+        <textarea id="newRow" placeholder="Ingresa los datos de la nueva fila separados por comas"></textarea>
+        <button onclick="insertRow()">Insertar</button>
+        <pre id="insertResult"></pre>
+    </section>
+
+    <section id="delete" class="section" style="display: none;">
+        <h2>Borrar Datos del CSV</h2>
+        <textarea id="deleteRow" placeholder="Ingresa el contenido exacto de la fila a borrar"></textarea>
+        <button onclick="deleteRow()">Borrar</button>
+        <pre id="deleteResult"></pre>
+    </section>
+
+    <h1> Modificar CSV</h1>
+    <nav>
+        <button onclick="showSection('read')">Leer CSV</button>
+        <button onclick="showSection('insert')">Insertar Datos</button>
+        <button onclick="showSection('delete')">Borrar Datos</button>
+    </nav>
+    <h1>Descargar CSV</h1>
+
+    <script src="app.js"></script>
+</body>
+</html>
